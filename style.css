@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;    
+}
+h1{
+    margin: 0;
+    padding: 0;
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: 800;   
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+    color: #e5e7eb;
+    font-size: 18px;
+    list-style: none;
+    display: flex;
+    gap: 16px
+}
+#header, #first-section{
+    background-color: #1f2937;
+    display: flex;
+}
+#header{
+    justify-content: space-between;
+    align-items: center;
+}
+#header > #logo{
+    color: #f9faf8;
+    font-size: 24px;
+}
+#first-section p{
+    font-size: 18px;
+    color: #e5e7eb;
+}
