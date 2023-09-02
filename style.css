@@ -5,7 +5,7 @@ html, body{
 body{
     font-family: 'Roboto', sans-serif;
 }
-h1, h2, ul{
+h1, h2, ul, p, h3{
     margin: 0;
     padding: 0;
 }
@@ -28,6 +28,7 @@ ul{
 }
 button{
     background-color: #3882f6;
+    border: 1px solid;
     border-color: #3882f6;
     border-radius: 8px;
     padding: 4px 20px;
@@ -39,24 +40,24 @@ header, #first{
     align-items: center;
 }
 header{
-    padding: 10px 75px 0px
+    padding: 10px 125px 0px
 }
 header > #logo{
     color: #f9faf8;
     font-size: 24px;
 }
 #first{
-    padding: 46px 75px;
+    padding: 46px 125px;
     gap: 24px;
 }
 #first p, button{
     font-size: 18px;
     color: #e5e7eb;
 }
-#text{
+#first > .text{
     flex: 1 1 0;
 }
-#text > p{
+.text > p{
  margin: 4px 0 8px 0;
 }
 #img-placeholder{
@@ -64,15 +65,19 @@ header > #logo{
     width: 100px;
     height: 200px;
     background-color: gray;
+    color: #f9faf8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #second{
-    padding: 21px 115px 46px;
+    padding: 21px 125px 46px;
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 32px;
 }
-#content{
+#second > .content{
     display: flex;
     gap: 32px;
     justify-content: center;
@@ -85,4 +90,41 @@ header > #logo{
     height: 200px;
     border: 3px solid #3882f6;
     border-radius: 15%;
+    margin-bottom: 10px;
+}
+#third{
+    background-color: #e5e7eb;
+    padding: 50px 125px 40px ;
+    display: flex;
+    flex-direction: column;
+}
+#quote{
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+}
+#author{
+    align-self: flex-end;
+    font-weight: bold;
+}
+#fourth{
+    padding: 40px 125px;
+}
+#fourth > .content{
+    padding: 20px 46px;
+    background-color: #3882f6;
+    color: #f9faf8;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content > button{
+    border-color: #f9faf8;
+}
+footer{
+    background-color: #1f2937;
+    color: #f9faf8;
+    text-align: center;
+    padding: 15px 0px;
 }
